@@ -3,51 +3,30 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   
-   body.background {	   
-	   background-image: url('../../pictures/picture1.png');
-	   background-repeat:no-repeat;
+
+body.background {
+    background-image: url('../images/picture1.png');
+    background-repeat: no-repeat;
+    width: 100%;
 }
 
 .home-logo {
-	
-	 width : 100%;
-	
-	}
-	
-	.home-logo-container {
-		
-		background:#fff;
-		/* Fallback for web browsers that doesn't support RGBa */
-	background: rgb(255, 255, 255);
-	/* RGBa with 255.6 opacity */
-	background: rgba(255, 255, 255, .6);
-	/* For IE 5.5 - 7*/
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99255255255255255255, endColorstr=#99255255255255255255);
-	/* For IE 8*/
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99255255255255255255, endColorstr=#99255255255255255255)";
-		
-		}
-		
-		.menu-icon{
-			width:30px;
-			height:auto;
-			
-			}
+    width: 100%;
+}
 
+.home-logo-container {
+    background: #fff;
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(255, 255, 255);
+    /* RGBa with 255.6 opacity */
+    background: rgba(255, 255, 255, .6);
+    /* For IE 5.5 - 7*/
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99255255255255255255, endColorstr=#99255255255255255255);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99255255255255255255, endColorstr=#99255255255255255255)";
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.menu-icon {
+    width: 30px;
+    height: auto;
+}
