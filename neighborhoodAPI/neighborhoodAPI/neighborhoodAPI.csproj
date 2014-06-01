@@ -199,7 +199,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ActivityTypeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\NeighborhoodsController.cs" />
+    <Compile Include="Controllers\NeighborhoodController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Extensions\Extensions.cs" />
     <Compile Include="Global.asax.cs">
@@ -253,6 +253,7 @@
     <Content Include="images\small logo colored.png" />
     <Content Include="images\small logo inactive transparent.png" />
     <Content Include="images\small logo inactive.png" />
+    <Content Include="images\userlogo.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -314,7 +315,8 @@
     <Content Include="Views\ActivityType\Details.cshtml" />
     <Content Include="Views\ActivityType\Edit.cshtml" />
     <Content Include="Views\ActivityType\Index.cshtml" />
-    <Content Include="Views\Neighborhoods\Index.cshtml" />
+    <Content Include="Views\Neighborhood\Index.cshtml" />
+    <Content Include="Views\Shared\NbsSideBar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201405312356035_initial.resx">

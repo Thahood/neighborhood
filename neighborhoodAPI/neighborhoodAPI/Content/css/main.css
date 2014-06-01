@@ -22,9 +22,44 @@ body.background {
 .purple {
     color: #A86ED4;
 }
+
 .white {
     color: white;
 }
+
+.black {
+
+    color: #000;
+}
+
+
+.side-bar ul {
+    
+    list-style: none; padding: 0; margin:  0;
+}
+
+.side-bar li {
+
+    margin-bottom: 20px;
+
+}
+.side-bar a {
+    text-decoration:none;
+    color:inherit;
+    display:block;
+
+}
+
+.status {
+
+    border-bottom: 1px solid silver;
+    padding: 5px;
+}
+
+span.icon-stack {
+    display:inline-block;
+}
+
 .container-bg {
     background: #fff;
     /* Fallback for web browsers that doesn't support RGBa */
@@ -41,21 +76,24 @@ body.background {
     width: 30px;
     height: auto;
 }
+
 .btn-purple {
     background-color: #A86ED4;
     color: white;
 }
-.btn-purple:hover {
-    background-color: #b76ef5;
-}
+
+    .btn-purple:hover {
+        background-color: #b76ef5;
+    }
+
 .navbar-inverse {
     background: none repeat scroll 0 0 #FFFFFF;
     background-image: none;
-
 }
+
 .navbar-inverse {
     background-color: white;
-    border:none;
+    border: none;
     -moz-box-shadow: none;
     -o-box-shadow: none;
     -webkit-box-shadow: none;
@@ -65,38 +103,46 @@ body.background {
 
 .menu {
     padding-top: 25px;
-    vertical-align: bottom; 
+    vertical-align: bottom;
 }
-.menu a {
-    color: white;
-    text-decoration: none;
-}
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+    }
+
 .bg-purple {
     background-color: #A86ED4;
 }
+
 .side-bar {
     position: fixed;
     height: 100%;
     width: 50px;
     background-color: #b76ef5;
 }
-.side-bar a {
-    color: white;
-    font-size: 1.7em;
-}
-.side-bar a:hover {
-    color: whitesmoke;
-}
+
+    .side-bar a {
+        color: white;
+        font-size: 1.7em;
+    }
+
+        .side-bar a:hover {
+            color: whitesmoke;
+        }
 /*Margins*/
 .mar-top-20 {
     margin-top: 20px;
 }
+
 .mar-top-5 {
     margin-top: 5px;
 }
+
 .mar-top-10 {
     margin-top: 10px;
 }
+
 .mar-bot-5 {
     margin-bottom: 5px;
 }
@@ -111,7 +157,16 @@ body.background {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
 .pad-5 {
     padding: 5px;
 }
 /*End Paddings*/
+
+
+
+.side-bar .ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

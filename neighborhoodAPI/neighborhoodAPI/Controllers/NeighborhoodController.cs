@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace neighborhoodAPI.Controllers
 {
-    public class NeighborhoodsController : Controller
+    public class NeighborhoodController : Controller
     {
         //
         // GET: /Neighborhoods/
