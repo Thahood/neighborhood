@@ -14,5 +14,10 @@ namespace neighborhoodAPI.Controllers
         {
             return View();
         }
+
+        public ActionResult Alerts()
+        {
+            return View();
+        }
 	}
 }

@@ -342,6 +342,7 @@
     <Content Include="Views\Neighborhoods\Index.cshtml" />
     <Content Include="Views\Shared\NbsSideBar.cshtml" />
     <Content Include="Views\Neighbors\Index.cshtml" />
+    <Content Include="Views\Neighborhoods\Alerts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201405312356035_initial.resx">

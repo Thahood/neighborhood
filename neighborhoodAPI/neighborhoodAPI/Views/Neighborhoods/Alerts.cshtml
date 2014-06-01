@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Alerts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@RenderPage("~/Views/Shared/NbsSideBar.cshtml", null)
+
+<div class="content">
+    <div class="container" style="margin-left: 60px">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-6">
+                <h3>What's happening in your Neighborhood?</h3>
+                <input required type="text" class="form-control" placeholder="Status">
+                <br />
+                <div class="media status">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../images/userlogo.png" alt="user logo">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading"><a href="#">Ned85</a></h4>
+                        <p><b>Annouced </b>event</p>
+                        <i class="fa fa-calendar fa-lg" style="color:red"></i>
+
+                        <br />
+                        <br />
+                        <div class="media-body">
+                            <div class="media">
+                                <a class="pull-left" href="#">
+                                    <img class="media-object" src="../../images/userlogo.png" alt="user logo">
+                                </a>
+
+                                <div class="media-body">
+                                    <h4 class="media-heading"><a href="#">Rmack</a></h4>
+                                    <p>I'd like to go</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="media status">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" src="../../images/userlogo.png" alt="user logo">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading"><a href="#">Rmack</a></h4>
+                        <p><b>Offering</b> carpooling</p>
+                        <i class="fa fa-car fa-lg" style="color:black"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2>Heading</h2>
+                <p>
+                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
+                    tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                    magna mollis euismod. Donec sed odio dui.
+                </p>
+                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            </div>
+
+        </div>
+        @*<hr>
+            <footer>
+                <p>&copy; Company 2014</p>
+            </footer>*@
+    </div> <!-- /container -->
+</div>
+
