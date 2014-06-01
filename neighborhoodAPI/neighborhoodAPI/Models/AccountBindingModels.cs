@@ -48,6 +48,12 @@ namespace neighborhoodAPI.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        public float Longitude { get; set; }
+
+        [Required]
+        public float Latitude { get; set; }
     }
 
     public class RegisterExternalBindingModel

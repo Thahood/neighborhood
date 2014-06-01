@@ -3,10 +3,35 @@ namespace neighborhoodAPI.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Initial : DbMigration
+    public partial class initial : DbMigration
     {
         public override void Up()
         {
+            CreateTable(
+                "dbo.Neighborhoods",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
+                        Description = c.String(),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            CreateTable(
+                "dbo.Services",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        Name = c.String(),
+                        StartTime = c.DateTime(nullable: false),
+                        Longitude = c.Single(nullable: false),
+                        Latitude = c.Single(nullable: false),
+                        Neighborhood_Id = c.Int(),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Neighborhoods", t => t.Neighborhood_Id)
+                .Index(t => t.Neighborhood_Id);
+            
             CreateTable(
                 "dbo.AspNetRoles",
                 c => new
@@ -46,9 +71,12 @@ namespace neighborhoodAPI.Migrations
                         LockoutEnabled = c.Boolean(nullable: false),
                         AccessFailedCount = c.Int(nullable: false),
                         UserName = c.String(nullable: false, maxLength: 256),
+                        Neighborhood_Id = c.Int(),
                     })
                 .PrimaryKey(t => t.Id)
-                .Index(t => t.UserName, unique: true, name: "UserNameIndex");
+                .ForeignKey("dbo.Neighborhoods", t => t.Neighborhood_Id)
+                .Index(t => t.UserName, unique: true, name: "UserNameIndex")
+                .Index(t => t.Neighborhood_Id);
             
             CreateTable(
                 "dbo.AspNetUserClaims",
@@ -80,20 +108,26 @@ namespace neighborhoodAPI.Migrations
         public override void Down()
         {
             DropForeignKey("dbo.AspNetUserRoles", "UserId", "dbo.AspNetUsers");
+            DropForeignKey("dbo.AspNetUsers", "Neighborhood_Id", "dbo.Neighborhoods");
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
+            DropForeignKey("dbo.Services", "Neighborhood_Id", "dbo.Neighborhoods");
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
             DropIndex("dbo.AspNetUserClaims", new[] { "UserId" });
+            DropIndex("dbo.AspNetUsers", new[] { "Neighborhood_Id" });
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
+            DropIndex("dbo.Services", new[] { "Neighborhood_Id" });
             DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.AspNetUserClaims");
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.Services");
+            DropTable("dbo.Neighborhoods");
         }
     }
 }

@@ -5,14 +5,14 @@ namespace neighborhoodAPI.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<neighborhoodAPI.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<neighborhoodAPI.Models.NeighborhoodDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(neighborhoodAPI.Models.ApplicationDbContext context)
+        protected override void Seed(neighborhoodAPI.Models.NeighborhoodDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 
