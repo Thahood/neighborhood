@@ -8,13 +8,24 @@ body.background {
     background-image: url('../images/picture1.png');
     background-repeat: no-repeat;
     width: 100%;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
 }
 
 .home-logo {
     width: 100%;
 }
 
-.home-logo-container {
+.purple {
+    color: #A86ED4;
+}
+.white {
+    color: white;
+}
+.container-bg {
     background: #fff;
     /* Fallback for web browsers that doesn't support RGBa */
     background: rgb(255, 255, 255);
@@ -30,3 +41,52 @@ body.background {
     width: 30px;
     height: auto;
 }
+.btn-purple {
+    background-color: #A86ED4;
+    color: white;
+}
+.btn-purple:hover {
+    background-color: #b76ef5;
+}
+.navbar-inverse {
+    background: none repeat scroll 0 0 #FFFFFF;
+    background-image: none;
+
+}
+.navbar-inverse {
+    background-color: white;
+    border:none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+}
+/*Margins*/
+.mar-top-20 {
+    margin-top: 20px;
+}
+.mar-top-5 {
+    margin-top: 5px;
+}
+.mar-top-10 {
+    margin-top: 10px;
+}
+.mar-bot-5 {
+    margin-bottom: 5px;
+}
+/*End Margins*/
+
+/*PADDINGS*/
+.pad-top-5 {
+    padding-top: 5px;
+}
+
+.pad-top-bot-5 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.pad-5 {
+    padding: 5px;
+}
+/*End Paddings*/
