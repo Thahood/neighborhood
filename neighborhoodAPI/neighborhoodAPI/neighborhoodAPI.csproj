@@ -197,6 +197,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ActivityTypeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Extensions\Extensions.cs" />
@@ -210,6 +211,10 @@
     <Compile Include="Migrations\201406010056531_RemoveNeighborhood.cs" />
     <Compile Include="Migrations\201406010056531_RemoveNeighborhood.Designer.cs">
       <DependentUpon>201406010056531_RemoveNeighborhood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201406010303400_addDataSets.cs" />
+    <Compile Include="Migrations\201406010303400_addDataSets.Designer.cs">
+      <DependentUpon>201406010303400_addDataSets.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -282,6 +287,11 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\ActivityType\Create.cshtml" />
+    <Content Include="Views\ActivityType\Delete.cshtml" />
+    <Content Include="Views\ActivityType\Details.cshtml" />
+    <Content Include="Views\ActivityType\Edit.cshtml" />
+    <Content Include="Views\ActivityType\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201405312356035_initial.resx">
@@ -289,6 +299,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201406010056531_RemoveNeighborhood.resx">
       <DependentUpon>201406010056531_RemoveNeighborhood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201406010303400_addDataSets.resx">
+      <DependentUpon>201406010303400_addDataSets.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
