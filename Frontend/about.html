@@ -26,7 +26,7 @@
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -35,7 +35,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Project name</a>
+                <a class="navbar-brand" href="index.html">
+                    <img class="menu-icon" src="images/small-logo-colored-transparent.png" width="319" height="307" alt="Home">Neighborhoods
+                </a>
+                <a class="navbar-brand" href="neighbors.html">
+                    Neighbors
+                </a>
+                <a class="navbar-brand" href="services.html">
+                    Services
+                </a>
+                <a class="navbar-brand" href="activities.html">
+                    Activities
+                </a>
+                <a class="navbar-brand" href="about.html">
+                    About Us
+                </a>
             </div>
             <div class="navbar-collapse collapse">
                 <form class="navbar-form navbar-right" role="form">
@@ -45,42 +59,55 @@
                     <div class="form-group">
                         <input type="password" placeholder="Password" class="form-control">
                     </div>
-                    <button type="submit" class="btn btn-success">Sign in</button>
+                    <button type="submit" class="btn btn-purple">Sign in</button>
                 </form>
             </div><!--/.navbar-collapse -->
         </div>
     </div>
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-    <img src="../Pictures/Picture1.png" width="1500" height="720" alt="Houston, Texas">
-<div class="container">
-<h1>About Tha Neighborhood</h1>
-            <p>Bringing neighborhoods closer together.</p>
-            <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    <div class="jumbotron neighborhood_banner">
+        <div class="container">
+            <h1>Services</h1>
+            <p>Provide or Select a Service</p>
+            <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
         </div>
     </div>
     <div class="container">
         <!-- Example row of columns -->
         <div class="row">
-            <div class="col-md-4">
-                <h2><a href="neighborhoods.html" title="Neighborhoods">Neighborhoods</a></h2>
-                <p>Find your Neighborhood.  Discover the particular Services offered in your Neighborhood. Apply for Services in your Neighborhood.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2><a href="services.html" title="Services">Services</a></h2>
-                <p>List particular services that you can provide.  Sign up for groups and events.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2><a href="neighbors.html" title="Neighbors">Neighbors</a></h2>
-                <p>Register.  Create and update you profile.  Connect with your neighbors.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
+            <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+    <img src="images/team/ned.png" width="200" height="200" alt="Mohanned"> Mohanned (Ned) - Designer
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+    <img src="images/team/robert.png" width="200" height="200" alt="Robert"> Robert - Web Developer
+    </a>
+  </div>
+  
+  
+          <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+
+    <img src="images/team/shen.png" width="200" height="200" alt="Shen"> Shen - GIS Expert
+    </a>
+  </div>
+  
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+    <img src="images/team/jaime.png" width="200" height="200" alt="Jaime"> Jaime - Web Developer
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+    <img src="images/team/cas.png" width="200" height="200" alt="Cas"> Cas - Web Developer
+    </a>
+  </div>
         </div>
         <hr>
         <footer>
-            <p>&copy; Tha Neighborhood 2014</p>
+            <p class="text-center">&copy; Tha servicehood 2014</p>
         </footer>
     </div> <!-- /container -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
