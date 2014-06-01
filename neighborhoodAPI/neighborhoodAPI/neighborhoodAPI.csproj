@@ -246,6 +246,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\featurednews2.png" />
     <Content Include="images\Houston3rdward.png" />
     <Content Include="images\neighborhood-banner.png" />
     <Content Include="images\neighbors\Neighbor-1.png" />
@@ -275,7 +276,6 @@
     <Content Include="images\site news 1.png" />
     <Content Include="images\site news 2.png" />
     <Content Include="images\site news 3.png" />
-    <Content Include="images\small logo colored transparent.png" />
     <Content Include="images\small logo colored.png" />
     <Content Include="images\small logo inactive transparent.png" />
     <Content Include="images\small logo inactive.png" />
@@ -306,6 +306,7 @@
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="Content\css\bootstrap-theme.css.map" />
     <Content Include="Content\css\bootstrap.css.map" />
+    <None Include="Properties\PublishProfiles\neighborhoods.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
