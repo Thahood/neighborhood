@@ -41,6 +41,10 @@ body.background {
     width: 30px;
     height: auto;
 }
+.menu-icon-with-name {
+    width: 115px;
+    height: auto;
+}
 .btn-purple {
     background-color: #A86ED4;
     color: white;
@@ -51,6 +55,10 @@ body.background {
 .navbar-inverse {
     background: none repeat scroll 0 0 #FFFFFF;
     background-image: none;
+
+}
+.navbar {
+    height:70px;
 
 }
 .navbar-inverse {
@@ -64,14 +72,15 @@ body.background {
 }
 .menu {
     padding-top: 25px;
-    vertical-align: bottom; 
+    vertical-align: bottom;
 }
 .menu a {
     color: white;
     text-decoration: none;
 }
 .bg-purple {
-    background-color: #A86ED4;
+    background-color: #A86ED4;	
+	height:35px;
 }
 .side-bar {
     position: fixed;
@@ -114,3 +123,16 @@ body.background {
     padding: 5px;
 }
 /*End Paddings*/
+
+/*Jumbotron*/
+.jumbotron.neighborhood_banner {
+    background-image: url('../images/neighborhood-banner.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+}
+/*End Jumbotron*/
