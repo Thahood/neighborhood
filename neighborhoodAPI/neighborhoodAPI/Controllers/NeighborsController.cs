@@ -6,10 +6,10 @@ using System.Web.Mvc;
 
 namespace neighborhoodAPI.Controllers
 {
-    public class NeighborhoodsController : Controller
+    public class NeighborsController : Controller
     {
         //
-        // GET: /Neighborhoods/
+        // GET: /Neighbors/
         public ActionResult Index()
         {
             return View();
