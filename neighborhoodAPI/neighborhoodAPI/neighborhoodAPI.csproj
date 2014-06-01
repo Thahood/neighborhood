@@ -264,6 +264,7 @@
     <Content Include="images\neighbors\Neighbor-7.png" />
     <Content Include="images\neighbors\Neighbor-8.png" />
     <Content Include="images\neighbors\Neighbor-9.png" />
+    <Content Include="images\featurednews.png" />
     <Content Include="images\Picture1.png" />
     <Content Include="images\Presentation.png" />
     <Content Include="images\site logo with site name.png" />
@@ -271,6 +272,10 @@
     <Content Include="images\site-logo-with-site-name.png" />
     <Content Include="images\site-logo.png" />
     <Content Include="images\small-logo-colored-transparent.png" />
+    <Content Include="images\site news 1.png" />
+    <Content Include="images\site news 2.png" />
+    <Content Include="images\site news 3.png" />
+    <Content Include="images\small logo colored transparent.png" />
     <Content Include="images\small logo colored.png" />
     <Content Include="images\small logo inactive transparent.png" />
     <Content Include="images\small logo inactive.png" />
